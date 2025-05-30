@@ -26,12 +26,41 @@ public class Order {
         switch (choice){
             case "1":
                 sandwiches.add(Sandwich.createSandwich());
+
+                System.out.println("Would you like to add a drink with that? (yes/no)");
+                String drinkChoice = scanner.nextLine().trim().toLowerCase();
+                if (drinkChoice.equals("yes") || drinkChoice.equals("y")){
+                    addDrink();
+                }
+                System.out.println("Would you like to add chips as well? (yes/no)");
+                String chipChoice = scanner.nextLine().trim().toLowerCase();
+                if (chipChoice.equals("yes") || chipChoice.equals("y")){
+                    addChip();
+                }
+                System.out.println("Would you like to add anything else? (yes to continue, no to checkout): ");
+                String more = scanner.nextLine().trim().toLowerCase();
+                if (more.equals("no") || more.equals("n")) {
+                    Checkout();
+                    return;
+            }
                 break;
             case "2":
                 addDrink();
+                System.out.println("Would you like to add anything else? (yes to continue, no to checkout): ");
+                String moreDrink = scanner.nextLine().trim().toLowerCase();
+                if (moreDrink.equals("no") || moreDrink.equals("n")) {
+                    Checkout();
+                    return;
+                }
                 break;
             case "3":
                 addChip();
+                System.out.println("Would you like to add anything else? (yes to continue, no to checkout): ");
+                String moreChip = scanner.nextLine().trim().toLowerCase();
+                if (moreChip.equals("no") || moreChip.equals("n")) {
+                    Checkout();
+                    return;
+                    }
                 break;
             case "4":
                 Checkout();
@@ -46,7 +75,30 @@ public class Order {
     }
     private void addDrink(){
         System.out.println("What would you like to drink? ");
-        String flavor = scanner.nextLine();
+        System.out.println("\n===== Drinks Menu =====");
+        System.out.println("Available flavors:");
+        System.out.println("1) Kool-Aid");
+        System.out.println("2) Grape Soda");
+        System.out.println("3) Fruit Punch");
+        System.out.println("\nSelect a drink (enter number): ");
+        String drinkChoice = scanner.nextLine();
+        String flavor = "";
+
+        switch (drinkChoice){
+            case "1":
+                flavor = "Kool-Aid";
+                break;
+            case "2":
+                flavor = "Grape Soda";
+                break;
+            case "3":
+                flavor = "Fruit Punch";
+                break;
+            default:
+                System.out.println("Invalid choice");
+                return;
+        }
+
         System.out.println("What size?(Small, Medium, Large) ");
         try {
             DrinkSize size = DrinkSize.valueOf(scanner.nextLine().toUpperCase());
@@ -57,7 +109,30 @@ public class Order {
     }
     private void addChip(){
         System.out.println("What flavor of chips would you like? ");
-        chips.add(new Chip(scanner.nextLine()));
+        System.out.println("\n===== Chips Menu =====");
+        System.out.println("Available flavors:");
+        System.out.println("1) Baked Cheetos");
+        System.out.println("2) Lays Original");
+        System.out.println("3) Cool Ranch Doritos");
+        System.out.println("Select a chip flavor (enter number): ");
+        String chipChoice = scanner.nextLine();
+        String flavor = "";
+
+        switch (chipChoice){
+            case "1":
+                flavor = "Baked Cheetos";
+                break;
+            case "2":
+                flavor = "Lays Original";
+                break;
+            case "3":
+                flavor = "Cool Ranch Doritos";
+                break;
+            default:
+                System.out.println("Invalid Selection");
+                return;
+        }
+        chips.add(new Chip(flavor));
     }
     private void Checkout(){
         double total = 0;

@@ -20,7 +20,7 @@ public class ReceiptWriter {
             writer.println("Thanks for dining with us!");
             writer.close();
         } catch (Exception e) {
-            System.out.println("Could not write receipt");
+
         }
     }
 }
