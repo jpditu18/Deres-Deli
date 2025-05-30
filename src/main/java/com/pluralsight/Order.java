@@ -27,17 +27,17 @@ public class Order {
             case "1":
                 sandwiches.add(Sandwich.createSandwich());
 
-                System.out.println("Would you like to add a drink with that? (yes/no)");
+                System.out.println("\nWould you like to add a drink with that? (yes/no)");
                 String drinkChoice = scanner.nextLine().trim().toLowerCase();
                 if (drinkChoice.equals("yes") || drinkChoice.equals("y")){
                     addDrink();
                 }
-                System.out.println("Would you like to add chips as well? (yes/no)");
+                System.out.println("\nWould you like to add chips as well? (yes/no)");
                 String chipChoice = scanner.nextLine().trim().toLowerCase();
                 if (chipChoice.equals("yes") || chipChoice.equals("y")){
                     addChip();
                 }
-                System.out.println("Would you like to add anything else? (yes to continue, no to checkout): ");
+                System.out.println("\nWould you like to add anything else? (yes to continue, no to checkout): ");
                 String more = scanner.nextLine().trim().toLowerCase();
                 if (more.equals("no") || more.equals("n")) {
                     Checkout();
@@ -46,7 +46,7 @@ public class Order {
                 break;
             case "2":
                 addDrink();
-                System.out.println("Would you like to add anything else? (yes to continue, no to checkout): ");
+                System.out.println("\nWould you like to add anything else? (yes to continue ordering, no to go to checkout): ");
                 String moreDrink = scanner.nextLine().trim().toLowerCase();
                 if (moreDrink.equals("no") || moreDrink.equals("n")) {
                     Checkout();
@@ -55,7 +55,7 @@ public class Order {
                 break;
             case "3":
                 addChip();
-                System.out.println("Would you like to add anything else? (yes to continue, no to checkout): ");
+                System.out.println("\nWould you like to add anything else? (yes to continue, no to checkout): ");
                 String moreChip = scanner.nextLine().trim().toLowerCase();
                 if (moreChip.equals("no") || moreChip.equals("n")) {
                     Checkout();
@@ -74,7 +74,7 @@ public class Order {
     }
     }
     private void addDrink(){
-        System.out.println("What would you like to drink? ");
+        System.out.println("\nWhat would you like to drink? ");
         System.out.println("\n===== Drinks Menu =====");
         System.out.println("Available flavors:");
         System.out.println("1) Kool-Aid");
@@ -86,13 +86,13 @@ public class Order {
 
         switch (drinkChoice){
             case "1":
-                flavor = "Kool-Aid";
+                flavor = "KOOL-AID";
                 break;
             case "2":
-                flavor = "Grape Soda";
+                flavor = "GRAPE SODA";
                 break;
             case "3":
-                flavor = "Fruit Punch";
+                flavor = "FRUIT PUNCH";
                 break;
             default:
                 System.out.println("Invalid choice");
@@ -108,25 +108,25 @@ public class Order {
         }
     }
     private void addChip(){
-        System.out.println("What flavor of chips would you like? ");
+        System.out.println("\nWhat flavor of chips would you like? ");
         System.out.println("\n===== Chips Menu =====");
         System.out.println("Available flavors:");
-        System.out.println("1) Baked Cheetos");
+        System.out.println("1) Baked Hot Cheetos");
         System.out.println("2) Lays Original");
         System.out.println("3) Cool Ranch Doritos");
-        System.out.println("Select a chip flavor (enter number): ");
+        System.out.println("\nSelect a chip flavor (enter number): ");
         String chipChoice = scanner.nextLine();
         String flavor = "";
 
         switch (chipChoice){
             case "1":
-                flavor = "Baked Cheetos";
+                flavor = "BAKED HOT CHEETOS";
                 break;
             case "2":
-                flavor = "Lays Original";
+                flavor = "LAYS ORIGINAL";
                 break;
             case "3":
-                flavor = "Cool Ranch Doritos";
+                flavor = "COOL RANCH DORITOS";
                 break;
             default:
                 System.out.println("Invalid Selection");

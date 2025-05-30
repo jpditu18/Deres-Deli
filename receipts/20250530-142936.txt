@@ -1,0 +1,17 @@
+===== Dere's Deli Receipt =====
+
+Order Date: 
+2025-05-30 14:29:36
+Sandwiches:
+- EIGHT WHITE sandwich with Meats: [STEAK] + Extra: [CHICKEN], Cheeses: [AMERICAN] + Extra: [SWISS], Toppings: [PEPPERS], Sauces: [MAYO], Toasted: Yes
+
+Drinks:
+- LARGE FRUIT PUNCH - $3.00
+
+Chips:
+- COOL RANCH DORITOS - $1.50
+
+------------------------------
+
+TOTAL: $16.60
+Thanks for dining with us! Come see us again soon!

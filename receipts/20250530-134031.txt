@@ -1,0 +1,17 @@
+===== Dere's Deli Receipt =====
+
+Order Date: 
+2025-05-30 13:40:31
+Sandwiches:
+- FOUR WHITE sandwich with Meats: [STEAK] + Extra: [CHICKEN], Cheeses: [AMERICAN], Toppings: [], Sauces: [MAYO], Toasted: Yes
+
+Drinks:
+- SMALL KOOL-AID - $2.00
+
+Chips:
+- BAKED HOT CHEETOS - $1.50
+
+------------------------------
+
+TOTAL: $11.25
+Thanks for dining with us! Come see us again soon!

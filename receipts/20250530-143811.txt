@@ -1,0 +1,17 @@
+===== Dere's Deli Receipt =====
+
+Order Date: 
+2025-05-30 14:38:11
+Sandwiches:
+- EIGHT null sandwich with Meats: [STEAK], Cheeses: [CHEDDAR], Toppings: [ONIONS], Sauces: [MAYO], Toasted: No
+
+Drinks:
+- SMALL KOOL-AID - $2.00
+
+Chips:
+- LAYS ORIGINAL - $1.50
+
+------------------------------
+
+TOTAL: $14.00
+Thanks for dining with us! Come see us again soon!

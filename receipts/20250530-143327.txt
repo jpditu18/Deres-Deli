@@ -1,0 +1,17 @@
+===== Dere's Deli Receipt =====
+
+Order Date: 
+2025-05-30 14:33:27
+Sandwiches:
+- TWELVE WHEAT sandwich with Meats: [HAM] + Extra: [SALAMI, BACON], Cheeses: [CHEDDAR] + Extra: [SWISS], Toppings: [ONIONS], Sauces: [MUSTARD], Toasted: Yes
+
+Drinks:
+- MEDIUM GRAPE SODA - $2.50
+
+Chips:
+- BAKED HOT CHEETOS - $1.50
+
+------------------------------
+
+TOTAL: $21.65
+Thanks for dining with us! Come see us again soon!
